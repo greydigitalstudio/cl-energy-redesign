@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Чистая энергия</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230620125239">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css?_v=20230620125239"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header site-header">
+	<div class="site-header__top">
+		<div class="container-full">
+			<a href="/" class="header-logo">
+				<img src="img/logo.png?_v=1687254760065" alt="Чистая энергия">
+			</a>
+			<div class="header-address">
+				<button class="header-address__icon">
+					<i class="fa-solid fa-location-dot"></i>
+				</button>
+				<p class="header-address__text">
+					Россия, Иркутский район, поселок Дзержинск, Аэродромная улица, 2
+				</p>
+			</div>
+			<div class="header-phone">
+				<a href="tel:8 800 505-95-84" class="header-phone__icon">
+					<i class="fa-solid fa-phone"></i>
+				</a>
+				<div class="header-phone__wrap">
+					<a href="tel:8 800 505-95-84" class="header-phone__tel">8 800 505-95-84</a>
+					<p class="header-phone__description">Пн-Пт с 10:00 до 20:00</p>
+				</div>
+			</div>
+			<a href="#modalCallback" class="btn main-btn header-btn" data-fancybox="">
+				<span class="btn-text">Заказать звонок</span>
+			</a>
+			<div class="header-cart">
+				<a href="" class="header-cart__btn">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</a>
+				<span class="header-cart__sum">0</span>
+			</div>
+			<button class="burger-button"><i class="fa-solid fa-bars"></i></button>
+		</div>
+	</div>
+	<div class="site-header__bottom">
+		<div class="container-full">
+			<nav class="header-menu">
+				<ul>
+					<li class="current-menu-item">
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">О нас</a>
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="#">Высоковольтные батареи</a>
+					</li>
+					<li>
+						<a href="#">Сервис</a>
+					</li>
+					<li>
+						<a href="#">Запчасти</a>
+					</li>
+					<li>
+						<a href="#">Аксессуары</a>
+					</li>
+					<li>
+						<a href="#">Блог</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="site-search">
+				<div class="site-search__wrap">
+					<form action="" class="site-search__form">
+						<input type="search" placeholder="Поиск на сайте..." class="site-search__input" required>
+						<label class="site-search__submit">
+							<input type="submit">
+							<span><i class="fa-solid fa-magnifying-glass"></i></span>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <main class="main-content car-page">
+      <section class="car-page-banner">
+  <div class="car-page-banner-overlay">
+    <div class="car-page-banner-overlay__text">
+      <h1 class="car-page-banner-heading">NISSAN LEAF «AZEO»</h1>
+      <p class="car-page-banner-text">
+        Nissan Leaf – самый доступный на рынке электромобиль, надежный, неприхотливый, выручит в любой ситуации.
+        Отличная управляемость из-за низкого центра тяжести и при этом комфортная подвеска, хорошая динамика.
+      </p>
+    </div>
+    <div class="car-page-banner-overlay__charkter">
+      <ul class="car-page-banner-list">
+        <li class="car-page-banner-list__item">
+          <div class="item-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
+          <div class="text-wrap">
+            <p class="item-title">Грузовой отсек</p>
+            <p class="item-text">1840 литров</p>
+          </div>
+        </li>
+        <li class="car-page-banner-list__item">
+          <div class="item-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="text-wrap">
+            <p class="item-title">Запас хода</p>
+            <p class="item-text">595 км</p>
+          </div>
+        </li>
+        <li class="car-page-banner-list__item">
+          <div class="item-icon"><i class="fa-solid fa-gauge"></i></div>
+          <div class="text-wrap">
+            <p class="item-title">Разгон от 0-100 км/ч</p>
+            <p class="item-text">3,4 сек</p>
+          </div>
+        </li>
+      </ul>
+      <div class="car-page-banner-overlay__btns">
+        <a href="#modalOrder" class="btn-small white-btn" data-fancybox="">Оформить автомобиль</a>
+        <a href="#modalCharakteristik" class="btn-small border-btn--white" data-fancybox="">Все характеристики</a>
+      </div>
+    </div>
+  </div>
+  <div class="glide car-banner-slider">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <div class="car-banner-slider__image">
+            <img src="img/car-image.jpg?_v=1687254760065" alt="">
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="car-banner-slider__image">
+            <img src="img/car-image-2.jpg?_v=1687254760065" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left slider-arrow" data-glide-dir="<">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="glide__arrow glide__arrow--right slider-arrow" data-glide-dir=">">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0"></button>
+      <button class="glide__bullet" data-glide-dir="=1"></button>
+    </div>
+  </div>
+</section>
+      <section class="text-box py-100">
+  <div class="container">
+    <div class="block-heading">
+      <h2 class="block-heading__title">
+        Описание
+      </h2>
+    </div>
+    <p>Автомобиль выпускался c 10/2012г. по 07/2017г. в следующих в модификациях:</p>
+    <ul class="styled-list">
+      <li class="styled-list__item">24кВт – обеспечивает пробег на 1 заряде до 160км. (2013-2017г.в.)</li>
+      <li class="styled-list__item">30кВт – обеспечивает пробег на 1 заряде до 205км. (2015-2017г.в.)</li>
+    </ul>
+    <p>Цвет обивки салона: бежевый или черныйОсновные цвета авто: белый, небесный (голубой), красный, черный,
+      серебристый, мокрый асфальт и другие…</p>
+  </div>
+</section>
+      <section class="calculate-box">
+  <h2 class="calculate-box-heading codec-font">Конфигуратор</h2>
+</section>
+      <section class="gallery-box py-100">
+  <div class="container">
+    <div class="block-heading">
+      <h2 class="block-heading__title">
+        <span class="green-text">Фотографиии </span>кузова и салона
+      </h2>
+    </div>
+  </div>
+  <div class="container-full">
+    <div class="glide gallery-slider">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <a href="img/galley/01.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
+              <img src="img/galley/01.jpg?_v=1687254760065" alt="">
+            </a>
+          </li>
+          <li class="glide__slide">
+            <a href="img/galley/02.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
+              <img src="img/galley/02.jpg?_v=1687254760065" alt="">
+            </a>
+          </li>
+          <li class="glide__slide">
+            <a href="img/galley/03.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
+              <img src="img/galley/03.jpg?_v=1687254760065" alt="">
+            </a>
+          </li>
+          <li class="glide__slide">
+            <a href="img/galley/04.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
+              <img src="img/galley/04.jpg?_v=1687254760065" alt="">
+            </a>
+          </li>
+          <li class="glide__slide">
+            <a href="img/galley/05.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
+              <img src="img/galley/05.jpg?_v=1687254760065" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left slider-arrow" data-glide-dir="<">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button class="glide__arrow glide__arrow--right slider-arrow" data-glide-dir=">">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="services-box py-100 gray-bg">
+  <div class="container-full">
+    <div class="services-box-cards">
+      <div class="services-box-cards__item">
+        <div class="img-wrap">
+          <img src="img/car-01.jpg?_v=1687254760065" alt="">
+        </div>
+        <div class="text-wrap">
+          <div class="item-heading">Электромобиль не боится низких температур</div>
+          <p class="item-text">
+            Система терморегулирования Huawei TMS эффективно восстанавливает отработанное тепло, увеличивая запас хода
+            на 10% а тепловой насос быстро нагреет салон
+            Идеальная защита дна и батарейного блока
+          </p>
+        </div>
+      </div>
+      <div class="services-box-cards__item">
+        <div class="img-wrap">
+          <img src="img/car-02.jpg?_v=1687254760065" alt="">
+        </div>
+        <div class="text-wrap">
+          <div class="item-heading">RNC: Дорожное шумоподавление</div>
+          <p class="item-text">
+            Система терморегулирования Huawei TMS эффективно восстанавливает отработанное тепло, увеличивая запас хода
+            на 10% а тепловой насос быстро нагреет салон
+            Идеальная защита дна и батарейного блока
+          </p>
+        </div>
+      </div>
+      <div class="services-box-cards__item">
+        <div class="img-wrap">
+          <img src="img/car-03.jpg?_v=1687254760065" alt="">
+        </div>
+        <div class="text-wrap">
+          <div class="item-heading">Многофункциональный второй ряд</div>
+          <p class="item-text">
+            С функциями вентиляции, обогрева и массажа он может быть отрегулирован вперед на 28 градусов и назад на 12
+            градусовЦентральный многофункциональный подлокотник оснащен сенсорной панелью и функцией беспроводной
+            быстрой зарядки* Спинка заднего сиденья регулируется в общей сложности на 40 градусов, а функции вентиляции,
+            обогрева и массажа задних сидений доступны только в четырехместной версии
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="text-box py-100">
+  <div class="container">
+    <div class="block-heading">
+      <h2 class="block-heading__title">
+        Кроме того, независимо от комплектации в авто
+        могут быть установлены следующие <span class="green-text"> дополнительные опции:</span>
+      </h2>
+    </div>
+    <ul class="styled-list">
+      <li class="styled-list__item">LED – фары головного света</li>
+      <li class="styled-list__item">AERO “обвес” – бамперы и фартук (пороги) спортивного стиля</li>
+      <li class="styled-list__item">Акустическая система “Bose” с камерами кругового обзора</li>
+      <li class="styled-list__item">Кожаная отделка сидений</li>
+      <li class="styled-list__item">17″ фирменные литые диски</li>
+    </ul>
+    <p>
+      Забудьте про затраты на топливо и большие счета за ТО!100км. пробега обходятся в 18-50руб. это в 10-20 дешевле
+      авто с ДВС!Позволяет экономить 150-250 тыс. руб. в год (В зависимости от Вашего пробега). Т.е. при месячном
+      пробеге в 3300 км машина экономит 15 тыс. руб. на топливе и ТО.
+    </p>
+  </div>
+</section>
+      <section class="car-about-info py-100 gray-bg">
+  <div class="container">
+    <div class="block-heading">
+      <h2 class="block-heading__title">
+        Сколько я буду <span class="green-text"> экономить:</span>
+      </h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="econom-table">
+      <div class="econom-table__head">
+        <ul class="econom-table-model">
+          <li class="econom-table-model__item">
+            <span class="item-icon green-icon"></span>
+            <span class="item-title codec-font">Nissan Leaf</span>
+          </li>
+          <li class="econom-table-model__item">
+            <span class="item-icon red-icon"></span>
+            <span class="item-title codec-font">Авто с ДВС (аналог)</span>
+          </li>
+        </ul>
+      </div>
+      <ul class="econom-table-list">
+        <li class="econom-table-list__item">
+          <span class="item-title">Пробег за год, км.</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">25 000</div>
+            <div class="item-row-elem item-second">25 000</div>
+          </div>
+        </li>
+        <li class="econom-table-list__item">
+          <span class="item-title">Расход топлива</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">20 кВтч/100 км</div>
+            <div class="item-row-elem item-second">9,5 л/100 км</div>
+          </div>
+        </li>
+        <li class="econom-table-list__item">
+          <span class="item-title">Цена за ед. топлива, руб.</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">1,29 руб.</div>
+            <div class="item-row-elem item-second">51 руб.</div>
+          </div>
+        </li>
+        <li class="econom-table-list__item">
+          <span class="item-title">Необходимое кол-во топлива, на год</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">5 000 кВтч</div>
+            <div class="item-row-elem item-second">2 375 л</div>
+          </div>
+        </li>
+      </ul>
+      <div class="econom-table__heading">Затраты на содержание, руб.</div>
+      <ul class="econom-table-list">
+        <li class="econom-table-list__item">
+          <span class="item-title">Стоимость топлива</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">6 450,00</div>
+            <div class="item-row-elem item-second">121 125,00</div>
+          </div>
+        </li>
+        <li class="econom-table-list__item">
+          <span class="item-title">ТО (масло и фильтры)</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">2 760,00</div>
+            <div class="item-row-elem item-second">13 500,00</div>
+          </div>
+        </li>
+        <li class="econom-table-list__item">
+          <span class="item-title">Страховка ОСАГО</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">10 750,00</div>
+            <div class="item-row-elem item-second">10 750,00</div>
+          </div>
+        </li>
+        <li class="econom-table-list__item">
+          <span class="item-title">Налог</span>
+          <div class="item-row">
+            <div class="item-row-elem item-first">0,00</div>
+            <div class="item-row-elem item-second">892,00</div>
+          </div>
+        </li>
+      </ul>
+      <div class="econom-table__footer">
+        <span class="item-heading">Итого:</span>
+        <ul class="econom-table-model">
+          <li class="econom-table-model__item">
+            <span class="item-icon green-icon"></span>
+            <span class="item-subtitle codec-font">Nissan Leaf - </span>
+            <span class="item-title codec-font"> 19 960,00 руб.</span>
+          </li>
+          <li class="econom-table-model__item">
+            <span class="item-icon red-icon"></span>
+            <span class="item-subtitle codec-font">Авто с ДВС (аналог) - </span>
+            <span class="item-title codec-font"> 146 267,00 руб.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="energy-box py-100">
+  <div class="container">
+    <div class="energy-box-body">
+      <div class="energy-box-body__text">
+        <div class="block-heading">
+          <h2 class="block-heading__title">
+            Где я буду <span class="green-text">заряжаться</span>
+          </h2>
+        </div>
+        <p class="energy-box-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <ul class="styled-list">
+          <li class="styled-list__item">Кожаная отделка сидений</li>
+          <li class="styled-list__item">17″ фирменные литые диски</li>
+        </ul>
+        <p class="energy-box-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
+      <div class="energy-box-body__map">
+        <div class="block-heading">
+          <h2 class="block-heading__title">
+            Публичные зарядки
+          </h2>
+        </div>
+        <div class="energy-box-select">
+          <select>
+            <option value="Иркутск">Иркутск</option>
+            <option value="Москва">Москва</option>
+          </select>
+        </div>
+        <div class="energy-box-map">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b407e2fb684092fe17a52612faf079fcd3e4425ca0e322e3dfd8bb477d00ef3&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="cta-box py-100 white-bg">
+  <div class="container">
+    <div class="cta-box-body">
+      <div class="cta-box-body__form">
+        <form action="">
+          <div class="cta-form">
+            <input type="text" placeholder="Ваше имя">
+            <span class="wpcf7-form-control-wrap">
+              <input type="tel" placeholder="+7 (999) 999-99-99" class="wpcf7-not-valid" required>
+              <span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+            </span>
+            <input type="text" placeholder="От куда вы? (страна, регион)">
+            <textarea placeholder="Какой автомобиль, запчасть или услуга вас интересует?"></textarea>
+            <span class="privacy-text">
+              Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+              <a href="#">политикой конфиденциальности</a>
+            </span>
+            <label class="btn main-btn">
+              <input type="submit" value="Отправить заявку" hidden>
+              <span class="btn-text">Отправить заявку</span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="cta-box-body__content">
+        <div class="block-heading">
+          <h2 class="block-heading__title">
+            Нужна <span class="green-text">консультация? </span>
+          </h2>
+          <p class="block-heading__subtitle">Оставьте заявку, а мы перезвоним <br>и подробно проконсультируем Вас</p>
+        </div>
+        <div class="img-wrap">
+          <img src="img/cta-image.png?_v=1687254760065" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer site-footer">
+	<div class="container">
+		<div class="site-footer-body">
+			<div class="site-footer-body__main">
+				<div class="footer-logo">
+					<img src="img/logo-footer.png?_v=1687254760065" alt="Чистая Энергия">
+				</div>
+				<ul class="footer-rekvizit">
+					<li class="footer-rekvizit__item">ИП Иванова А.Н. - ИНН: 381114046377</li>
+					<li class="footer-rekvizit__item">ООО “Чистая Энергия” - ИНН: 381114046377</li>
+				</ul>
+				<ul class="footer-links">
+					<li class="footer-links__item">
+						<a href="#" class="footer-links__link">Политика конфиденциальности</a>
+					</li>
+				</ul>
+				<div class="site-copyright">© 2023г. Все права защищены</div>
+			</div>
+			<div class="site-footer-body__contacts">
+				<ul class="footer-contacts">
+					<li class="footer-contacts__item">
+						<div class="footer-contacts__title">Бесплатно для России:</div>
+						<a href="tel:8 800 505-95-84" class="footer-contacts__text">8 800 505-95-84</a>
+					</li>
+					<li class="footer-contacts__item">
+						<div class="footer-contacts__title">г. Иркутск:</div>
+						<a href="tel:+7 3952 487-000" class="footer-contacts__text">+7 3952 487-000</a>
+					</li>
+					<li class="footer-contacts__item">
+						<div class="footer-contacts__title">Whatsapp / Telegram </div>
+						<a href="tel:+7 914 8-984-000" class="footer-contacts__text">+7 914 8-984-000</a>
+					</li>
+					<li class="footer-contacts__item">
+						<div class="footer-contacts__title">Для писем и предложений</div>
+						<a href="mailto:info@cl-energy.ru" class="footer-contacts__text">info@cl-energy.ru</a>
+					</li>
+				</ul>
+			</div>
+			<div class="site-footer-body__form">
+				<div class="footer-title">Бесплатная консультация</div>
+				<form action="">
+					<div class="cta-form footer-form">
+						<span class="wpcf7-form-control-wrap">
+							<input type="tel" placeholder="+7 (999) 999-99-99" class="wpcf7-not-valid" required>
+							<span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+						</span>
+						<label class="privacy-checkbox">
+							<input type="checkbox">
+							<span class="privacy-checkbox-icon"></span>
+							<span class="privacy-checkbox-text">
+								Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+								<a href="#">политикой конфиденциальности</a>
+							</span>
+						</label>
+						<label class="btn main-btn">
+							<input type="submit" value="Отправить заявку" hidden>
+							<span class="btn-text">Отправить заявку</span>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="modal-wrap" style="display: none;" id="modalCallback">
+    <div class="modal-wrap__body">
+        <h3 class="modal-title">Заполните форму</h3>
+        <h4 class="modal-subtitle">Наши специалиты перезвонят вам в течении 5 минут</h4>
+        <form action="">
+            <!-- form body -->
+            <div class="cta-form cta-form--modal">
+                <input type="text" placeholder="Ваше имя">
+                <span class="wpcf7-form-control-wrap">
+                    <input type="tel" placeholder="+7 (999) 999-99-99" class="wpcf7-not-valid" required>
+                    <span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+                </span>
+                <input type="text" placeholder="От куда вы? (страна, регион)">
+                <textarea placeholder="Какой автомобиль, запчасть или услуга вас интересует?"></textarea>
+                <span class="privacy-text">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                    <a href="#">политикой конфиденциальности</a>
+                </span>
+                <label class="btn main-btn">
+                    <input type="submit" value="Отправить заявку" hidden>
+                    <span class="btn-text">Отправить заявку</span>
+                </label>
+            </div>
+            <!-- form body end -->
+        </form>
+    </div>
+</div>
+<div class="modal-wrap" style="display: none;" id="modalOrder">
+    <div class="modal-wrap__body">
+        <h3 class="modal-title">Заполните форму</h3>
+        <h4 class="modal-subtitle">Наши специалиты перезвонят вам в течении 5 минут</h4>
+        <form action="">
+            <!-- form body -->
+            <div class="cta-form cta-form--modal">
+                <input type="text" placeholder="Ваше имя">
+                <span class="wpcf7-form-control-wrap">
+                    <input type="tel" placeholder="+7 (999) 999-99-99" class="wpcf7-not-valid" required>
+                    <span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
+                </span>
+                <input type="text" placeholder="От куда вы? (страна, регион)">
+                <span class="privacy-text">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                    <a href="#">политикой конфиденциальности</a>
+                </span>
+                <label class="btn main-btn">
+                    <input type="submit" value="Отправить заявку" hidden>
+                    <span class="btn-text">Отправить заявку</span>
+                </label>
+            </div>
+            <!-- form body end -->
+        </form>
+    </div>
+</div>
+<div class="modal-wrap" style="display: none;" id="modalCharakteristik">
+    <div class="modal-wrap__body">
+        <h3 class="modal-title">Характеристики</h3>
+        <h4 class="modal-subtitle">NISSAN LEAF «AZEO»</h4>
+        <ul class="modal-charakteristik-list">
+            <li class="modal-charakteristik-list__item">
+                <p class="item-title">Грузовой отсек</p>
+                <p class="item-text">1840 ЛИТРОВ</p>
+            </li>
+            <li class="modal-charakteristik-list__item">
+                <p class="item-title">Грузовой отсек</p>
+                <p class="item-text">1840 ЛИТРОВ</p>
+            </li>
+            <li class="modal-charakteristik-list__item">
+                <p class="item-title">Грузовой отсек</p>
+                <p class="item-text">1840 ЛИТРОВ</p>
+            </li>
+            <li class="modal-charakteristik-list__item">
+                <p class="item-title">Грузовой отсек</p>
+                <p class="item-text">1840 ЛИТРОВ</p>
+            </li>
+            <li class="modal-charakteristik-list__item">
+                <p class="item-title">Грузовой отсек</p>
+                <p class="item-text">1840 ЛИТРОВ</p>
+            </li>
+            <li class="modal-charakteristik-list__item">
+                <p class="item-title">Грузовой отсек</p>
+                <p class="item-text">1840 ЛИТРОВ</p>
+            </li>
+            <li class="modal-charakteristik-list__item">
+                <p class="item-title">Грузовой отсек</p>
+                <p class="item-text">1840 ЛИТРОВ</p>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+  <script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.js"></script>
+<script src="js/vendors.min.js?_v=20230620125240"></script>
+<script src="js/app.min.js?_v=20230620125240"></script>
+
+<script>
+  // main-slider
+  new Glide('.main-banner-slider', {
+    type: 'carousel',
+    focusAt: 'center',
+    animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+    animationDuration: 800,
+    autoplay: 3000,
+    perView: 1
+  }).mount();
+</script>
+<script>
+  // services-slider
+  new Glide('.services-slider-1', {
+    type: 'carousel',
+    focusAt: 'center',
+    animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+    animationDuration: 800,
+    autoplay: 3000,
+    perView: 1
+  }).mount();
+</script>
+<script>
+  new Glide('.services-slider-2', {
+    type: 'carousel',
+    focusAt: 'center',
+    animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+    animationDuration: 800,
+    autoplay: 3000,
+    perView: 1
+  }).mount();
+</script>
+<script>
+  new Glide('.services-slider-3', {
+    type: 'carousel',
+    focusAt: 'center',
+    animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+    animationDuration: 800,
+    autoplay: 3000,
+    perView: 1
+  }).mount();
+</script>
+<script>
+  new Glide('.car-banner-slider', {
+    type: 'carousel',
+    focusAt: 'center',
+    animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+    animationDuration: 800,
+    autoplay: 3000,
+    perView: 1
+  }).mount();
+</script>
+<script>
+  new Glide('.gallery-slider', {
+    type: 'carousel',
+    focusAt: 'center',
+    animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+    animationDuration: 800,
+    perView: 5,
+    breakpoints: {
+      1440: {
+        perView: 4
+      },
+      1280: {
+        perView: 3
+      },
+      768: {
+        perView: 2
+      },
+      575: {
+        perView: 1
+      }
+    }
+  }).mount();
+</script>
+</body>
+
+</html>
