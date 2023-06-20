@@ -5,7 +5,8 @@
   <title>Чистая энергия</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230620125239">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="shortcut icon" href="favicon.ico">
   <!-- <meta name="robots" content="noindex, nofollow"> -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
@@ -21,7 +22,7 @@
 <body>
   <div class="wrapper">
     <header class="header site-header">
-      <div class="site-header__top">
+      <div class="site-header__top wow fadeInDown" data-wow-delay="0.5s">
         <div class="container-full">
           <a href="/" class="header-logo">
             <img src="img/logo.png?_v=1687254760065" alt="Чистая энергия">
@@ -55,7 +56,7 @@
           <button class="burger-button"><i class="fa-solid fa-bars"></i></button>
         </div>
       </div>
-      <div class="site-header__bottom">
+      <div class="site-header__bottom wow fadeInDown">
         <div class="container-full">
           <nav class="header-menu">
             <ul>
@@ -103,16 +104,16 @@
       </div>
     </header>
     <main class="main-content car-page">
-      <section class="car-page-banner">
+      <section class="car-page-banner wow fadeIn" data-wow-delay="0s">
         <div class="car-page-banner-overlay">
-          <div class="car-page-banner-overlay__text">
+          <div class="car-page-banner-overlay__text wow fadeInLeft" data-wow-delay="0.5s">
             <h1 class="car-page-banner-heading">NISSAN LEAF «AZEO»</h1>
             <p class="car-page-banner-text">
               Nissan Leaf – самый доступный на рынке электромобиль, надежный, неприхотливый, выручит в любой ситуации.
               Отличная управляемость из-за низкого центра тяжести и при этом комфортная подвеска, хорошая динамика.
             </p>
           </div>
-          <div class="car-page-banner-overlay__charkter">
+          <div class="car-page-banner-overlay__charkter wow fadeInRight" data-wow-delay="0.5s">
             <ul class="car-page-banner-list">
               <li class="car-page-banner-list__item">
                 <div class="item-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
@@ -172,7 +173,7 @@
         </div>
       </section>
       <section class="text-box py-100">
-        <div class="container">
+        <div class="container wow fadeInDown" data-wow-delay="0s">
           <div class="block-heading">
             <h2 class="block-heading__title">
               Описание
@@ -193,7 +194,7 @@
             <div class="configurator__container">
               <div class="configurator__screen">
                 <!-- Left side screens -->
-                <div class="configurator__screen-left" v-show="curentStepIndex == 0">
+                <div class="configurator__screen-left wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 0">
                   <div class="configurator__screen-media">
 
                     <img
@@ -207,21 +208,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="configurator__screen-left" v-show="curentStepIndex == 1">
+                <div class="configurator__screen-left wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 1">
                   <div class="configurator__screen-media">
                     <img
                       :src="`https://cl-energy.ru/wp-content/themes/electroauto/images/models/tesla-${selectedModelKey}-${computedModel.colors.items[computedModel.colors.selected].prefix}-${computedModel.rims.items[computedModel.rims.selected].radius}.jpg`"
                       width="100%" alt="">
                   </div>
                 </div>
-                <div class="configurator__screen-left" v-show="curentStepIndex == 2">
+                <div class="configurator__screen-left wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 2">
                   <div class="configurator__screen-salon">
                     <img
                       :src="`https://cl-energy.ru/wp-content/themes/electroauto/images/salons/${selectedModelKey}-${computedModel.salons.items[computedModel.salons.selected].prefix}.jpg`"
                       width="100%" alt="">
                   </div>
                 </div>
-                <div class="configurator__screen-left glide" v-show="curentStepIndex == 3">
+                <div class="configurator__screen-left glide wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 3">
                   <div class="configurator__screen-slider glide__track" data-glide-el="track">
                     <div class="glide__slides">
                       <div class="glide__slide">
@@ -255,7 +256,7 @@
                     <button class="glide__arrow glide__arrow--right slider-arrow" data-glide-dir=">"><i class="fa-solid fa-angle-right"></i></button>
                   </div>
                 </div>
-                <div class="configurator__screen-left" id="tesla_form" v-show="curentStepIndex == 4">
+                <div class="configurator__screen-left wow fadeIn" data-wow-delay="0s" id="tesla_form" v-show="curentStepIndex == 4">
 
                   <div class="wpcf7 no-js" id="wpcf7-f399-o2" lang="ru-RU" dir="ltr">
                     <div class="screen-reader-response">
@@ -341,7 +342,7 @@
                 <div class="configurator__screen-right">
                   <div class="configurator__form">
                     <!-- Right side screens -->
-                    <div class="configurator__form-top" v-show="curentStepIndex == 0">
+                    <div class="configurator__form-top wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 0">
                       <div class="configurator__form-items">
                         <div class="configurator__form-item">
                           <div class="configurator__form-item_title">Выберите модель</div>
@@ -392,7 +393,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="configurator__form-top" v-show="curentStepIndex == 1">
+                    <div class="configurator__form-top wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 1">
                       <div class="configurator__form-items">
                         <div class="configurator__form-item configurator__form-item--colors">
                           <div class="configurator__form-item_title">Выберите цвет автомобиля
@@ -439,7 +440,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="configurator__form-top" v-show="curentStepIndex == 2">
+                    <div class="configurator__form-top wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 2">
                       <div class="configurator__form-items">
                         <div class="configurator__form-item configurator__form-item--colors">
                           <div class="configurator__form-item_title">Выберите цвет автомобиля
@@ -480,7 +481,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="configurator__form-top" v-show="curentStepIndex == 3">
+                    <div class="configurator__form-top wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 3">
                       <div class="configurator__form-items">
                         <!-- <div class="configurator__form-item">
                                           <div class="configurator__form-item_title">Базовый автопилот: включен
@@ -511,7 +512,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="configurator__form-top" v-show="curentStepIndex == 4">
+                    <div class="configurator__form-top wow fadeIn" data-wow-delay="0s" v-show="curentStepIndex == 4">
                       <div class="configurator__form-total">
                         <div class="configurator__form-total-title">Ваша новая
                           {{ computedModel.name }}</div>
@@ -546,7 +547,7 @@
                       </div>
                     </div>
                     <!-- Right side screens end -->
-                    <div class="configurator__form-bottom">
+                    <div class="configurator__form-bottom wow fadeIn" data-wow-delay="0s">
                       <button
                         class="configurator__form-button configurator__button configurator__button--outlined configurator__button--back"
                         v-if="curentStepIndex > 0 && curentStepIndex < 4" @click.prevent="prevStep">
@@ -584,7 +585,7 @@
       </section>
       <section class="gallery-box py-100">
         <div class="container">
-          <div class="block-heading">
+          <div class="block-heading wow fadeInDown" data-wow-delay="0s">
             <h2 class="block-heading__title">
               <span class="green-text">Фотографиии </span>кузова и салона
             </h2>
@@ -594,27 +595,27 @@
           <div class="glide gallery-slider">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
-                <li class="glide__slide">
+                <li class="glide__slide wow zoomIn" data-wow-delay="0s">
                   <a href="img/galley/01.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
                     <img src="img/galley/01.jpg?_v=1687254760065" alt="">
                   </a>
                 </li>
-                <li class="glide__slide">
+                <li class="glide__slide wow zoomIn" data-wow-delay="0.1s">
                   <a href="img/galley/02.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
                     <img src="img/galley/02.jpg?_v=1687254760065" alt="">
                   </a>
                 </li>
-                <li class="glide__slide">
+                <li class="glide__slide wow zoomIn" data-wow-delay="0.2s">
                   <a href="img/galley/03.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
                     <img src="img/galley/03.jpg?_v=1687254760065" alt="">
                   </a>
                 </li>
-                <li class="glide__slide">
+                <li class="glide__slide wow zoomIn" data-wow-delay="0.3s">
                   <a href="img/galley/04.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
                     <img src="img/galley/04.jpg?_v=1687254760065" alt="">
                   </a>
                 </li>
-                <li class="glide__slide">
+                <li class="glide__slide wow zoomIn" data-wow-delay="0.4s">
                   <a href="img/galley/05.jpg" class="gallery-slider__img" data-fancybox="car-gallery">
                     <img src="img/galley/05.jpg?_v=1687254760065" alt="">
                   </a>
@@ -632,57 +633,71 @@
           </div>
         </div>
       </section>
-      <section class="services-box py-100 gray-bg">
-        <div class="container-full">
-          <div class="services-box-cards">
-            <div class="services-box-cards__item">
-              <div class="img-wrap">
-                <img src="img/car-01.jpg?_v=1687254760065" alt="">
-              </div>
-              <div class="text-wrap">
-                <div class="item-heading">Электромобиль не боится низких температур</div>
-                <p class="item-text">
-                  Система терморегулирования Huawei TMS эффективно восстанавливает отработанное тепло, увеличивая запас
-                  хода
-                  на 10% а тепловой насос быстро нагреет салон
-                  Идеальная защита дна и батарейного блока
-                </p>
-              </div>
-            </div>
-            <div class="services-box-cards__item">
-              <div class="img-wrap">
-                <img src="img/car-02.jpg?_v=1687254760065" alt="">
-              </div>
-              <div class="text-wrap">
-                <div class="item-heading">RNC: Дорожное шумоподавление</div>
-                <p class="item-text">
-                  Система терморегулирования Huawei TMS эффективно восстанавливает отработанное тепло, увеличивая запас
-                  хода
-                  на 10% а тепловой насос быстро нагреет салон
-                  Идеальная защита дна и батарейного блока
-                </p>
+      <section class="services-boxes">
+        <div class="services-box py-100 gray-bg">
+          <div class="container-full">
+            <div class="services-box-cards">
+              <div class="services-box-cards__item">
+                <div class="img-wrap">
+                  <img src="img/car-01.jpg?_v=1687254760065" alt="">
+                </div>
+                <div class="text-wrap">
+                  <div class="item-heading">Электромобиль не боится низких температур</div>
+                  <p class="item-text">
+                    Система терморегулирования Huawei TMS эффективно восстанавливает отработанное тепло, увеличивая запас
+                    хода
+                    на 10% а тепловой насос быстро нагреет салон
+                    Идеальная защита дна и батарейного блока
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="services-box-cards__item">
-              <div class="img-wrap">
-                <img src="img/car-03.jpg?_v=1687254760065" alt="">
+          </div>
+        </div>
+        <div class="services-box py-100 gray-bg">
+          <div class="container-full">
+            <div class="services-box-cards">
+              <div class="services-box-cards__item">
+                <div class="img-wrap">
+                  <img src="img/car-02.jpg?_v=1687254760065" alt="">
+                </div>
+                <div class="text-wrap">
+                  <div class="item-heading">RNC: Дорожное шумоподавление</div>
+                  <p class="item-text">
+                    Система терморегулирования Huawei TMS эффективно восстанавливает отработанное тепло, увеличивая запас
+                    хода
+                    на 10% а тепловой насос быстро нагреет салон
+                    Идеальная защита дна и батарейного блока
+                  </p>
+                </div>
               </div>
-              <div class="text-wrap">
-                <div class="item-heading">Многофункциональный второй ряд</div>
-                <p class="item-text">
-                  С функциями вентиляции, обогрева и массажа он может быть отрегулирован вперед на 28 градусов и назад
-                  на 12
-                  градусовЦентральный многофункциональный подлокотник оснащен сенсорной панелью и функцией беспроводной
-                  быстрой зарядки* Спинка заднего сиденья регулируется в общей сложности на 40 градусов, а функции
-                  вентиляции,
-                  обогрева и массажа задних сидений доступны только в четырехместной версии
-                </p>
+            </div>
+          </div>
+        </div>
+        <div class="services-box py-100 gray-bg">
+          <div class="container-full">
+            <div class="services-box-cards">
+              <div class="services-box-cards__item">
+                <div class="img-wrap">
+                  <img src="img/car-03.jpg?_v=1687254760065" alt="">
+                </div>
+                <div class="text-wrap">
+                  <div class="item-heading">Многофункциональный второй ряд</div>
+                  <p class="item-text">
+                    С функциями вентиляции, обогрева и массажа он может быть отрегулирован вперед на 28 градусов и назад
+                    на 12
+                    градусовЦентральный многофункциональный подлокотник оснащен сенсорной панелью и функцией беспроводной
+                    быстрой зарядки* Спинка заднего сиденья регулируется в общей сложности на 40 градусов, а функции
+                    вентиляции,
+                    обогрева и массажа задних сидений доступны только в четырехместной версии
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="text-box py-100">
+      <section class="text-box py-100 wow fadeInDown" data-wow-delay="0s">
         <div class="container">
           <div class="block-heading">
             <h2 class="block-heading__title">
@@ -707,7 +722,7 @@
       </section>
       <section class="car-about-info py-100 gray-bg">
         <div class="container">
-          <div class="block-heading">
+          <div class="block-heading wow fadeInDown" data-wow-delay="0.5s">
             <h2 class="block-heading__title">
               Сколько я буду <span class="green-text"> экономить:</span>
             </h2>
@@ -717,39 +732,39 @@
           <div class="econom-table">
             <div class="econom-table__head">
               <ul class="econom-table-model">
-                <li class="econom-table-model__item">
+                <li class="econom-table-model__item wow fadeInDown" data-wow-delay="0s">
                   <span class="item-icon green-icon"></span>
                   <span class="item-title codec-font">Nissan Leaf</span>
                 </li>
-                <li class="econom-table-model__item">
+                <li class="econom-table-model__item wow fadeInDown" data-wow-delay="0s">
                   <span class="item-icon red-icon"></span>
                   <span class="item-title codec-font">Авто с ДВС (аналог)</span>
                 </li>
               </ul>
             </div>
             <ul class="econom-table-list">
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInLeft" data-wow-delay="0s">
                 <span class="item-title">Пробег за год, км.</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">25 000</div>
                   <div class="item-row-elem item-second">25 000</div>
                 </div>
               </li>
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInRight" data-wow-delay="0s">
                 <span class="item-title">Расход топлива</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">20 кВтч/100 км</div>
                   <div class="item-row-elem item-second">9,5 л/100 км</div>
                 </div>
               </li>
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInLeft" data-wow-delay="0s">
                 <span class="item-title">Цена за ед. топлива, руб.</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">1,29 руб.</div>
                   <div class="item-row-elem item-second">51 руб.</div>
                 </div>
               </li>
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInRight" data-wow-delay="0s">
                 <span class="item-title">Необходимое кол-во топлива, на год</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">5 000 кВтч</div>
@@ -757,30 +772,30 @@
                 </div>
               </li>
             </ul>
-            <div class="econom-table__heading">Затраты на содержание, руб.</div>
+            <div class="econom-table__heading wow fadeInDown" data-wow-delay="0s">Затраты на содержание, руб.</div>
             <ul class="econom-table-list">
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInLeft" data-wow-delay="0s">
                 <span class="item-title">Стоимость топлива</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">6 450,00</div>
                   <div class="item-row-elem item-second">121 125,00</div>
                 </div>
               </li>
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInRight" data-wow-delay="0s">
                 <span class="item-title">ТО (масло и фильтры)</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">2 760,00</div>
                   <div class="item-row-elem item-second">13 500,00</div>
                 </div>
               </li>
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInLeft" data-wow-delay="0s">
                 <span class="item-title">Страховка ОСАГО</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">10 750,00</div>
                   <div class="item-row-elem item-second">10 750,00</div>
                 </div>
               </li>
-              <li class="econom-table-list__item">
+              <li class="econom-table-list__item wow fadeInRight" data-wow-delay="0s">
                 <span class="item-title">Налог</span>
                 <div class="item-row">
                   <div class="item-row-elem item-first">0,00</div>
@@ -788,7 +803,7 @@
                 </div>
               </li>
             </ul>
-            <div class="econom-table__footer">
+            <div class="econom-table__footer wow fadeInUp" data-wow-delay="0s">
               <span class="item-heading">Итого:</span>
               <ul class="econom-table-model">
                 <li class="econom-table-model__item">
@@ -809,7 +824,7 @@
       <section class="energy-box py-100">
         <div class="container">
           <div class="energy-box-body">
-            <div class="energy-box-body__text">
+            <div class="energy-box-body__text wow fadeInLeft" data-wow-delay="0s">
               <div class="block-heading">
                 <h2 class="block-heading__title">
                   Где я буду <span class="green-text">заряжаться</span>
@@ -832,7 +847,7 @@
                 consequat.
               </p>
             </div>
-            <div class="energy-box-body__map">
+            <div class="energy-box-body__map wow fadeInRight" data-wow-delay="0s">
               <div class="block-heading">
                 <h2 class="block-heading__title">
                   Публичные зарядки
@@ -856,7 +871,7 @@
       <section class="cta-box py-100 white-bg">
         <div class="container">
           <div class="cta-box-body">
-            <div class="cta-box-body__form">
+            <div class="cta-box-body__form wow fadeInLeft">
               <form action="">
                 <div class="cta-form">
                   <input type="text" placeholder="Ваше имя">
@@ -879,13 +894,13 @@
             </div>
             <div class="cta-box-body__content">
               <div class="block-heading">
-                <h2 class="block-heading__title">
+                <h2 class="block-heading__title wow fadeInUp">
                   Нужна <span class="green-text">консультация? </span>
                 </h2>
-                <p class="block-heading__subtitle">Оставьте заявку, а мы перезвоним <br>и подробно проконсультируем Вас
+                <p class="block-heading__subtitle wow fadeInUp" data-wow-delay="0.5s">Оставьте заявку, а мы перезвоним <br>и подробно проконсультируем Вас
                 </p>
               </div>
-              <div class="img-wrap">
+              <div class="img-wrap wow fadeInRight" data-wow-delay="0.7s">
                 <img src="img/cta-image.png?_v=1687254760065" alt="">
               </div>
             </div>
@@ -897,44 +912,44 @@
       <div class="container">
         <div class="site-footer-body">
           <div class="site-footer-body__main">
-            <div class="footer-logo">
+            <div class="footer-logo wow fadeInLeft" data-wow-delay="0s">
               <img src="img/logo-footer.png?_v=1687254760065" alt="Чистая Энергия">
             </div>
-            <ul class="footer-rekvizit">
+            <ul class="footer-rekvizit wow fadeInLeft" data-wow-delay="0.1s">
               <li class="footer-rekvizit__item">ИП Иванова А.Н. - ИНН: 381114046377</li>
               <li class="footer-rekvizit__item">ООО “Чистая Энергия” - ИНН: 381114046377</li>
             </ul>
-            <ul class="footer-links">
+            <ul class="footer-links wow fadeInLeft" data-wow-delay="0.2s">
               <li class="footer-links__item">
                 <a href="#" class="footer-links__link">Политика конфиденциальности</a>
               </li>
             </ul>
-            <div class="site-copyright">© 2023г. Все права защищены</div>
+            <div class="site-copyright wow fadeInLeft" data-wow-delay="0.3s">© 2023г. Все права защищены</div>
           </div>
           <div class="site-footer-body__contacts">
             <ul class="footer-contacts">
-              <li class="footer-contacts__item">
+              <li class="footer-contacts__item wow fadeInUp" data-wow-delay="0s">
                 <div class="footer-contacts__title">Бесплатно для России:</div>
                 <a href="tel:8 800 505-95-84" class="footer-contacts__text">8 800 505-95-84</a>
               </li>
-              <li class="footer-contacts__item">
+              <li class="footer-contacts__item wow fadeInUp" data-wow-delay="0.1s">
                 <div class="footer-contacts__title">г. Иркутск:</div>
                 <a href="tel:+7 3952 487-000" class="footer-contacts__text">+7 3952 487-000</a>
               </li>
-              <li class="footer-contacts__item">
+              <li class="footer-contacts__item wow fadeInUp" data-wow-delay="0.2s">
                 <div class="footer-contacts__title">Whatsapp / Telegram </div>
                 <a href="tel:+7 914 8-984-000" class="footer-contacts__text">+7 914 8-984-000</a>
               </li>
-              <li class="footer-contacts__item">
+              <li class="footer-contacts__item wow fadeInUp" data-wow-delay="0.3s">
                 <div class="footer-contacts__title">Для писем и предложений</div>
                 <a href="mailto:info@cl-energy.ru" class="footer-contacts__text">info@cl-energy.ru</a>
               </li>
             </ul>
           </div>
           <div class="site-footer-body__form">
-            <div class="footer-title">Бесплатная консультация</div>
+            <div class="footer-title wow fadeInDown" data-wow-delay="0s">Бесплатная консультация</div>
             <form action="">
-              <div class="cta-form footer-form">
+              <div class="cta-form footer-form wow fadeInRight" data-wow-delay="0.3s">
                 <span class="wpcf7-form-control-wrap">
                   <input type="tel" placeholder="+7 (999) 999-99-99" class="wpcf7-not-valid" required>
                   <span class="wpcf7-not-valid-tip">Поле обязательно для заполнения.</span>
